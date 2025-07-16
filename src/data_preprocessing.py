@@ -1,20 +1,51 @@
 """
 the purpose of this class is loading, cleaning and storing data 
 """
+import pandas as pd
+import time 
 
-class DataCleaning:
-    def __init__(self, file_path):
-        self.file_path =file_path
-        self.data = None
-    def load_data(self):
-        """ Load data """
-        self.data = pd.read_csv(self.file_path)
-        return self.data.head(10)
-    def data_overview(self):
-        """ check the data type for every columns """
-        self.load_data().info()
-        print(100 * "-")
-    def cln_columns(self):
-        """ cleaning columns """
-        pass
+
+def load_data(file_path):
+    df = pd.read_csv(f"{file_path}")
+    return df
+
+
+def Data_overview(DataFrame):
+    """ the purpose of this function is to give you a complete idea about the data"""
+    info = DataFrame.info()
+    shape = DataFrame.shape()
+    null_values = DataFarame.isnull().value_counts()
+    print(f"this data set conatin {shape[0]} row and {shape[1]} columns}")
+    print(f"")
+
+
+def cleaned_data(DataFrame):
+    print("wait for processing the data ...")
+    time.sleep(2)
+    # create a copy of data 
+    new_df = DataFrame.copy()
+    df_copy = df_copy.drop(df_copy.index[10472])
+    # convert the columns Size to right data type 
+    df_copy['Size'] = df_copy['Size'].str.replace('M', '000')
+    df_copy['Size'] = df_copy['Size'].str.replace('k', '')
+    df_copy['Size'] = df_copy['Size'].replace('Varies with device', np.nan)
+    df_copy['Size'] = df_copy['Size'].astype(float)
+    # clean the price columns and convert it into an float data type 
+    df_copy['Price'] = [i.replace('$', '') for i in df_copy['Price']]
+    df_copy['Price'] = df_copy['Price'].astype(float)
+    # the same things for Install columns 
+    df_copy['Installs'] = [i.replace('+', '').replace(',', '') for i in df_copy['Installs']]
+    df_copy['Installs'] = df_copy['Installs'].astype(int)
+    # convert the date columns into date data type
+    df_copy['Last Updated'] = pd.to_datetime(df_copy['Last Updated'])
+    # create new columns 
+    df_copy['Day'] = df_copy['Last Updated'].dt.day
+    df_copy['Month'] = df_copy['Last Updated'].dt.month
+    df_copy['Year'] = df_copy['Last Updated'].dt.year
+    print("data has been cleaned successfully")
+
+
+
+def save_data_to_csv(dt_cleaned, file_path):
+    dt_cleaned.to_csv(f'{file_path}')
                  
