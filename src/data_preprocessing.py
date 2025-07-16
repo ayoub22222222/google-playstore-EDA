@@ -1,5 +1,5 @@
-import pandas as pd 
-import time
+import pandas as pd
+import numpy as np
 
 def load_data(file_path:str):
     df = pd.read_csv(file_path)
@@ -7,18 +7,9 @@ def load_data(file_path:str):
 
 
 
-def Data_overview(DataFrame):
-    """ the purpose of this function is to give you a complete idea about the data """
-    info = DataFrame.info()
-    shape = DataFrame.shape()
-    null_values = DataFarame.isnull().value_counts()
-    print(f"this data set conatin {shape[0]} row and {shape[1]} columns")
-
 
 
 def cleaned_data(DataFrame):
-    print("wait for processing the data ...")
-    time.sleep(2)
     # create a copy of data
     df_copy = DataFrame.copy()
     df_copy = df_copy.drop(df_copy.index[10472])
@@ -40,7 +31,6 @@ def cleaned_data(DataFrame):
     df_copy['Month'] = df_copy['Last Updated'].dt.month
     df_copy['Year'] = df_copy['Last Updated'].dt.year
     return df_copy
-    print("data has been cleaned successfully")
 
 
 def save_data_to_csv(dt_cleaned, file_path:str):
