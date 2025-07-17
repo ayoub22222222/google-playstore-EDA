@@ -35,6 +35,31 @@ Instead, we will focus on cleaning and converting each column into its proper da
   - `src/` — Source code: data cleaning, feature engineering modules
   - `google_playstore_eda.egg-info/` — Packaging metadata (auto-generated)
 
+
+## 📊 Key Insights from the Dataset
+
+1. **Most Popular Category:**
+
+![Data Model](assets/capture3.PNG)
+   The most popular category is **Family**, followed by:
+   - Family
+   - Game
+   - Tools
+   - Business
+   - Medical
+   - Personalization
+   - Productivity
+   - Lifestyle
+   - Finance
+   - Sports
+
+![Data Model](assets/capture4.PNG)
+2. **App with the Largest Number of Installs:**
+   The apps with the largest number of installs are **Instagram** and **Twitter**.
+
+
+
+
 ## 🚀 How to Use This Project
 
 ### 1️⃣ Clone the Repository
