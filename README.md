@@ -22,18 +22,19 @@ Instead, we will focus on cleaning and converting each column into its proper da
 
 ![Data Model]()
 
-## 🗂️  Project Structure
+## 📁 Project Structure
 
-google-playstore-EDA/
-├── README.md # Project overview and instructions
-├── requirements.txt # List of Python dependencies
-├── setup.py # Project setup configuration
-├── data/ # Raw and cleaned datasets
-├── notebooks/ # Jupyter notebooks for EDA and experiments
-├── outputs/ # Generated outputs (figures, reports, CSV files)
-├── scripts/ # Python scripts to run data processing tasks
-├── src/ # Source code: data cleaning, feature engineering modules
-├── google_playstore_eda.egg-info/ # Packaging metadata (auto-generated)
+- `google-playstore-EDA/`
+  - `README.md` — Project overview and instructions
+  - `requirements.txt` — List of Python dependencies
+  - `setup.py` — Project setup configuration
+  - `data/` — Raw and cleaned datasets
+  - `notebooks/` — Jupyter notebooks for EDA and experiments
+  - `outputs/` — Generated outputs (figures, reports, CSV files)
+  - `scripts/` — Python scripts to run data processing tasks
+  - `src/` — Source code: data cleaning, feature engineering modules
+  - `google_playstore_eda.egg-info/` — Packaging metadata (auto-generated)
+
 
 ## 📄 Report
 
