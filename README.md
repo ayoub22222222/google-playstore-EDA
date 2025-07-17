@@ -35,6 +35,20 @@ Instead, we will focus on cleaning and converting each column into its proper da
   - `src/` — Source code: data cleaning, feature engineering modules
   - `google_playstore_eda.egg-info/` — Packaging metadata (auto-generated)
 
+## 🚀 How to Use This Project
+
+### 1️⃣ Clone the Repository
+
+Clone the project using Git:
+
+```bash
+git clone https://github.com/your-username/google-playstore-EDA.git
+
+### 2️⃣ Navigate to the Project Directory
+
+```bash
+cd google-playstore-EDA
+
 
 ## 📄 Report
 
