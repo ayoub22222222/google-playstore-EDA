@@ -43,11 +43,24 @@ Clone the project using Git:
 
 ```bash
 git clone https://github.com/your-username/google-playstore-EDA.git
-
+```
 ### 2️⃣ Navigate to the Project Directory
 
 ```bash
 cd google-playstore-EDA
+```
+
+### 3️⃣ Install the Required Dependencies
+```bash
+    pip install -r requirements.txt
+```
+### 4️⃣ Run the Data Cleaning Script
+
+```bash
+    cd scripts
+    python run.py
+
+```
 
 
 ## 📄 Report
