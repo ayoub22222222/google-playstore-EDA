@@ -40,7 +40,7 @@ Instead, we will focus on cleaning and converting each column into its proper da
 
 1. **Most Popular Category:**
 
-![Data Model](assets/capture3.PNG)
+![Data Model](assets/Capture3.PNG)
    The most popular category is **Family**, followed by:
    - Family
    - Game
@@ -53,7 +53,7 @@ Instead, we will focus on cleaning and converting each column into its proper da
    - Finance
    - Sports
 
-![Data Model](assets/capture4.PNG)
+![Data Model](assets/Capture4.PNG)
 2. **App with the Largest Number of Installs:**
    The apps with the largest number of installs are **Instagram** and **Twitter**.
 
