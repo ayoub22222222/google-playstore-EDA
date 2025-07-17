@@ -1,6 +1,6 @@
 ## EDA and Feature Engineering fr google app store
 
-![Data Model]()
+![Data Model](assets/data_cleaning.png)
 
 
 This is an end-to-end data cleaning, EDA, and feature engineering project,
